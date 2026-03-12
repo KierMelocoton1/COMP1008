@@ -13,7 +13,7 @@ public class Boss extends Fighter {
             specialMoveActivated = false;
             multiplier = 3;
         }
-        return multiplier & super.getPower();
+        return multiplier * super.getPower();
     }
 
     public void useSpecialMove(){
